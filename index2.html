@@ -1,50 +1,87 @@
 <html>
-    <script type='text/javascript' src='https://code.jquery.com/jquery-1.10.2.js'></script>
-    <script type='text/javascript' src='https:////code.jquery.com/ui/1.10.4/jquery-ui.js'></script>
-    <link rel='stylesheet' type='text/css' href='https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css'/>
-
-    <script type='text/javascript'>
-        $(function () {
-            $('#text-body').tabs();
-        });
-    </script>
-    <style type='text/css'>
-        body {
-            font-family: "Trebuchet MS", Helvetica, sans-serif;
-            width: 800px;
-            margin: 0 auto;
-        }
-
-        #logo img {
-            height: 200px;
-            width: 200px;
-            float: left;
-        }
-
-        /*table, tr, td {border: 2px solid black;}*/
-
-        #title h3 {
-            margin-top: -20px;
-        }
-
-        #title table td {
-            padding-top: 10px;
-            width: 50%;
-        }
-
-        #text-body table {
-            width: 100%;
-        }
-
-        #text-body {
-            clear: both;
-        }
-
-        #text-body div a {
-            color: blue !important;
-        }
-    </style>
     <head>
+        <script type='text/javascript' src='https://code.jquery.com/jquery-1.10.2.js'></script>
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+        <style type='text/css'>
+            body {
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+                width: 800px;
+                margin: 0 auto;
+            }
+
+            #logo img {
+                height: 200px;
+                width: 200px;
+                float: left;
+            }
+
+            #title h3 {
+                margin-top: -20px;
+            }
+
+            #title table td {
+                padding-top: 10px;
+                width: 50%;
+            }
+
+            #text-body {
+                clear: both;
+                padding: 10px 0px 0px 0px
+            }
+
+            .tabs-border {
+                height: 10px;
+                width: 100%;
+                background-color: black;
+            }
+
+            .tab-content {
+                padding: 10px;
+                margin-top: 50px;
+            }
+
+            .navbar-nav {
+                background-color: #0099FF;
+                height: 50px !important;
+                width: 100%;
+                border-width: 10px 0px 10px 0px;
+                border-color: black;
+                border-style: solid;
+            }
+
+            .blue-highlight {
+                background-color: #0099FF;
+                border-radius: 25px;
+                text-align: center;
+            }
+
+            a {
+                color: black;
+                clear: both;
+            }
+
+            .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+            .navbar {min-height:32px !important}
+
+            .tab-content img {
+                float: right;
+                display: inline;
+                margin: 20px;
+            }
+
+            .tab-content td {
+                padding-left: 15px;
+            }
+
+            #footer {
+                background-color: #0099FF;
+            }
+
+        </style>
         <title>Atlantic Engineering</title>
     </head>
     <body>
@@ -65,69 +102,146 @@
                 </table>
             </div>
             <div id='text-body'>
-                <ul>
-                    <li><a href='#about-us'>About Us</a></li>
-                    <li><a href='#contact'>Contact</a></li>
-                    <li><a href='#expertise'>Expertise</a></li>
-                    <li><a href='#jobs'>Jobs</a></li>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href='#about-us' data-toggle="tab">ABOUT US</a></li>
+                    <li><a href='#services' data-toggle="tab">SERVICES</a></li>
+                    <li><a href='#contact-us' data-toggle="tab">CONTACT US</a></li>
+                    <li><a href='#projects' data-toggle="tab">PROJECTS</a></li>
+                    <li><a href='#careers' data-toggle="tab">CAREERS</a></li>
                 </ul>
-                <div id='about-us'>
-                    <p>
-                        Atlantic Engineering Associates, Inc. has been providing
-                        top quality service in Massachusetts for over 30 years.
-                        We utilize the latest technological equipment and
-                        software which allows us to serve our clients in the most
-                        efficient and accurate manner.  We strongly belive in being
-                        affordable and reasonable in our pricing.  By maintaining
-                        low overhead costs; we are able to pass the savings to
-                        out clients.  We serve a wide range of clients including
-                        government, municipal commercial and residential.
-                    </p>
-                    <p>
-                        Our field and office staff have substantial
-                        professional experience and training.  Safety is a
-                        priority for us whereby our employees are OSHA
-                        certified, MBTA Right of Way Certified and MBCR
-                        Railroad Safety Certified.  We pride in our values on
-                        education and encourage all employees to continue their
-                        educational by offering tuition reimbursement.
-                    </p>
-                    <p>
-                        We are proud to be members of the Massachusetts
-                        Association of Land Surveyors and Engineers and the
-                        National Society of Professional Engineers.
-                    </p>
-                    <p>
-                        We are Pre-qualified with the Massachusetts Department
-                        of Transportation.
-                    </p>
-                    <p>
-                        We are a Woman owned business.
-                    </p>
-                </div>
-                <div id='contact'>
-                    <table>
-                        <tr>
-                            <th>Julia Brachanow</th>
-                            <th>William Wahlefield</th>
-                        </tr>
-                        <tr>
-                            <td>978-664-1855</td>
-                            <td>781-284-1919</td>
-                        </tr>
-                        <tr>
-                            <td><a href='mailto:juliebrak@verizon.net'>juliebrak@verizon.net</a></td>
-                            <td><a href='mailto:williamwahlefiel@aol.com'>williamwahlefiel@aol.com</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <div id='expertise'>
-                    test teatjewlsdfiajsdf asdlfiasjdfoiasjdfoasijdfoasidjcv as
-                    asdfoasidfjas dopafisjdfp aosdfp asodifjaspdofija
+                <div class="tab-content">
+                    <div class="tab-pane active" id='about-us'>
+                        <img src="images/about-us-small.png"/>
+                        <p>
+                            Atlantic Engineering Associates, Inc. has been
+                            providing top quality land surveying and
+                            engineering services in Massachusetts for over
+                            30 years. We utilize the latest technological
+                            equipment and software which allows us to
+                            serve our clients in the most efficient and
+                            accurate manner. We strongly believe in
+                            being honest and reasonable in our pricing.
+                            By maintaining low overhead costs; we are
+                            able to pass the savings on to our clients. We
+                            are fully licensed and insured.
+                        </p>
+                        <p>
+                            Atlantic serves a wide range of clients including
+                            Government, Municipal, Commercial and Residential.
+                            Five of our survey crews are prequalified by Mass
+                            DOT for Engineering Field Survey Services. Atlantic
+                            has 20 years experience on bridges and highways
+                            under contract with the Commonwealth of
+                            Massachusetts. Atlantic is also prequalified by
+                            their Architects and Engineers Review Board.
+                        </p>
+                        <p>
+                            We can proudly say, that in 32 years of business, we
+                            have never failed to complete work, never had a
+                            contract terminated nor have we ever been involved
+                            in a lawsuit filed against us.
+                        </p>
+                        <p>
+                            Because Safety is of utmost importance to us; all of
+                            our team is OSHA certified, MBTA Right of Way
+                            Certified, MBCR Railroad Safety Certified and AMTRAK
+                            Safety Certified. We also have an employee on staff
+                            who is Hazardous Waste Certified. We can proudly say
+                            that we have a 30 year 100% Safety record.
+                        </p>
+                    </div>
+                    <div class="tab-pane" id='contact-us'>
+                        <p>
+                            CONTACT US TODAY FOR A FREE ESTIMATE ...
+                        </p>
+                        <p>
+                            YOU CAN RELY ON US TO RESPOND WITHIN 1 BUSINESS DAY!!!
+                        </p>
+                        <p>
+                            Fully insured to $1,000,000 / Fully Licensed
+                        </p>
+                        <p class="blue-highlight">
+                            PHONE:  978-979-7544<br/>
+                            FAX:  978-664-1855<br/>
+                            OR<br/>
+                            EMAIL: <a href="mailto:julia@atlantic-ma.com">julia@atlantic-ma.com</a>
+                        </p>
+                    </div>
+                    <div class="tab-pane"  id='projects'>
+                        <p>
+                            Highway and Bridge Layout Projects
+                        </p>
+                        <table>
+                            <tr><td>Winthrop</td><td>Saratoga Street / Belle Isle Bridge</td></tr>
+                            <tr><td>Andover</td><td>River Road over Rte 93 Bridge</td></tr>
+                            <tr><td>Boston/Cambridge</td><td>Larz Anderson Bridge</td></tr>
+                            <tr><td>Needham/Dedham</td><td>Rte 95 Add A Lane     Bridge and Roadway</td></tr>
+                            <tr><td>Cambridge/Arlington</td><td>Rte 2 / Alewife Brook Parkway Bridge</td></tr>
+                            <tr><td>Chelsea</td><td>Eastern Avenue     Roadway</td></tr>
+                            <tr><td>Peabody/Middleton</td><td>Bike Path Middleton to Rte 95</td></tr>
+                            <tr><td>Peabody</td><td>Rte 1 Jughandle     Roadway</td></tr>
+                            <tr><td>Somerville</td><td>Assembly Square    Roadway</td></tr>
+                            <tr><td>Lynnfield/Wakefield</td><td>Walnut ,Audubon and Salem Streets  Rte 95    Roadway</td></tr>
+                            <tr><td>Woburn</td><td>Winn St.     Roadway</td></tr>
+                            <tr><td>Medford</td><td>Roosevelt Circle Bridge</td></tr>
+                            <tr><td>Lynn/Saugus</td><td>Rte 107 Bridge over Saugus River</td></tr>
+                            <tr><td>Woburn</td><td>Commerce Way/ Rte 93 Bridge    Hazardous Waste Site</td></tr>
+                            <tr><td>Boston</td><td>Morton St.   Railroad Bridge</td></tr>
+                            <tr><td>Milton</td><td>Adams St. Bridge</td></tr>
+                            <tr><td>Weymouth</td><td>Columbia St. Bridge</td></tr>
+                            <tr><td>Boston</td><td>Congress St./ Fort Point Channel Bridge</td></tr>
+                            <tr><td>Boston/Everett</td><td>Alford Street Bridge over Mystic River</td></tr>
+                            <tr><td>Canton</td><td>High St. Railroad Bridge over Amtrak</td></tr>
+                            <tr><td>Wellesley</td><td>Washington Street/ Rte 9 Bridge</td></tr>
+                            <tr><td>Randolph</td><td>Union Street     Roadway</td></tr>
+                            <tr><td>Wellesley</td><td>Rockland St Railroad Bridge over Conrail</td></tr>
+                            <tr><td>Boston</td><td>Cambridge St.	Roadway</td></tr>
+                            <tr><td>Weston</td><td>Recreation Road  Bridge</td></tr>
+                            <tr><td>Quincy</td><td>Hancock Street     Roadway</td></tr>
+                            <tr><td>Weymouth</td><td>Rte 18    Roadway</td></tr>
+                            <tr><td>Peabody</td><td>Rte 1 / Lowell St. Bridge</td></tr>
+                            <tr><td>Quincy</td><td>Adams Green	Roadway</td></tr>
+                            <tr><td>Boston</td><td>Cambridge St./I 90 Bridge</td></tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane"  id='careers'>
+                        <p>
+                            Atlantic Engineering is a family based business that
+                            takes a personal interest in all of our employees.
+                        </p>
+                        <p>
+                            Some of our benefits include:
+                            <ul>
+                                <li>Health Insurance</li>
+                                <li>Vacation</li>
+                                <li>Personal/Sick</li>
+                                <li>Holidays</li>
+                                <li>Tuition Reimbursement</li>
+                            </ul>
+                        </p>
+                        <p>
+                            Please revisit this site to check on job openings or
+                            send us your resume. We will keep it on file so we
+                            can contact you when an opening becomes available.
+                        </p>
+                        <p>
+                            Requirements:
+                            <ul>
+                                <li>Valid Drivers License</li>
+                                <li>Experience operating a total station and data collector</li>
+                                <li>Commitment to following safe procedures</li>
+                            </ul>
+                        </p>
+                        <p>
+                            Resumes can bea sent to
+                            julia@atlantic-ma.com
+                        </p>
+                    </div>
                 </div>
             </div>
             <div id='footer'>
-
+                153 Crest Avenue Revere, MA 02151 978-979-7544 fax 978-664-1855
+                julia@atlantic-ma.com
             </div>
         </div>
     </body>
