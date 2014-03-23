@@ -19,13 +19,25 @@
                 float: left;
             }
 
+            h1 {
+                font-size: 18pt;
+                font-weight: bolder;
+            }
+
             #title h3 {
-                margin-top: -20px;
+                font-size: 14pt;
+                margin-top: -2px;
             }
 
             #title table td {
                 padding-top: 10px;
                 width: 50%;
+                text-align: center;
+            }
+
+            #title table tfoot td {
+                font-style: italic;
+                font-size: 10pt;
             }
 
             #text-body {
@@ -53,10 +65,34 @@
                 border-style: solid;
             }
 
+            #text-body h4 {
+                color: #0099FF;
+                text-decoration: underline;
+                font-size: 11pt;
+                font-weight: bold;
+            }
+
+            #text-body #services ul {
+                padding: 0;
+                list-style-type: none;
+            }
+
+            #text-body #contact-us * {
+                text-align: center;
+            }
+
+            .blue-text {
+                color: #0099FF;
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                font-size: 16pt;
+            }
+
             .blue-highlight {
                 background-color: #0099FF;
                 border-radius: 25px;
-                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
             }
 
             a {
@@ -73,12 +109,28 @@
                 margin: 20px;
             }
 
-            .tab-content td {
-                padding-left: 15px;
+            .picture-table {
+                float: right;
+                padding: 0px;
+                border-collapse: collapse;
+            }
+
+            .picture-table td, .picture-table td img {
+                padding: 2px;
+                margin: 0px;
+            }
+
+            #projects {
+                height: 50%;
+                overflow-y: scroll;
+            }
+            #projects td {
+                padding-left: 25px;
             }
 
             #footer {
                 background-color: #0099FF;
+                clear: both;
             }
 
         </style>
@@ -92,13 +144,18 @@
             <div id='title'>
                 <table>
                     <caption>
-                        <h1>ATLANTIC ENGINEERING ASSOCIATES, INC.</h1>
-                        <h3>Civil Engineers and Land Surveyors</h3>
+                        <h1>Atlantic Engineering Associates, Inc.</h1>
+                        <h3>LAND SURVEYORS AND CIVIL ENGINEERS</h3>
                     </caption>
                     <tr>
                         <td>Julia Brachanow<br/>President</td>
                         <td>William Wahlefield, P.E., P.L.S.<br/>Chief Engineer</td>
                     </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">"woman owned business"</td>
+                        </tr>
+                    </tfoot>
                 </table>
             </div>
             <div id='text-body'>
@@ -150,15 +207,51 @@
                             that we have a 30 year 100% Safety record.
                         </p>
                     </div>
+                    <div class="tab-pane" id='services'>
+                        <table class="picture-table">
+                            <tr>
+                                <td colspan="2"><img src="images/services-1-small.png"/></td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/services-2-small.png"/></td>
+                                <td><img src="images/services-3-small.png"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><img src="images/services-4-small.png"/></td>
+                            </tr>
+                        </table>
+                        <h4>CONSTRUCTION</h4>
+                        <ul>
+                            <li>Preliminary Surveys - Highways and Bridges</li>
+                            <li>Construction Layout</li>
+                            <li>As Builts</li>
+                        </ul>
+                        <h4>RESIDENTIAL AND BUILDINGS</h4>
+                        <ul>
+                            <li>Topographic Surveys</li>
+                            <li>Plot Plans</li>
+                            <li>Boundary Surveys</li>
+                            <li>Subdivision Surveys</li>
+                            <li>Stakeouts</li>
+                            <li>As Built Plans</li>
+                            <li>Waterways (Chapter 91) Licenses</li>
+                            <li>Condominium Site Plans</li>
+                            <li>Easement Plans</li>
+                            <li>ATLA Surveys</li>
+                            <li>Land Court Surveys</li>
+                            <li>Elevation Certificates (FEMA)</li>
+                            <li>Railroad Location Surveys</li>
+                        </ul>
+                        <h4>ENGINEERING</h4>
+                        <ul>
+                            <li>Existing Conditions - Surveys</li>
+                            <li>Hydrographic - Surveys</li>
+                        </ul>
+                    </div>
                     <div class="tab-pane" id='contact-us'>
-                        <p>
-                            CONTACT US TODAY FOR A FREE ESTIMATE ...
-                        </p>
-                        <p>
+                        <h1>CONTACT US TODAY FOR A FREE ESTIMATE ...</h1>
+                        <p class="blue-text">
                             YOU CAN RELY ON US TO RESPOND WITHIN 1 BUSINESS DAY!!!
-                        </p>
-                        <p>
-                            Fully insured to $1,000,000 / Fully Licensed
                         </p>
                         <p class="blue-highlight">
                             PHONE:  978-979-7544<br/>
@@ -166,9 +259,12 @@
                             OR<br/>
                             EMAIL: <a href="mailto:julia@atlantic-ma.com">julia@atlantic-ma.com</a>
                         </p>
+                        <p>
+                            Fully insured to $1,000,000 / Fully Licensed
+                        </p>
                     </div>
                     <div class="tab-pane"  id='projects'>
-                        <p>
+                        <p class="blue-text">
                             Highway and Bridge Layout Projects
                         </p>
                         <table>
@@ -202,6 +298,38 @@
                             <tr><td>Peabody</td><td>Rte 1 / Lowell St. Bridge</td></tr>
                             <tr><td>Quincy</td><td>Adams Green	Roadway</td></tr>
                             <tr><td>Boston</td><td>Cambridge St./I 90 Bridge</td></tr>
+                            <tr><td>Somerville</td><td>School, Walnut and Sycamore Sts.   Railroad Bridges</td></tr>
+                            <tr><td>Beverly</td><td>Cabot, Dodge and Enon Sts.        Roadway</td></tr>
+                            <tr><td>Revere</td><td>Beach St. Bell Circle Railroad Bridge</td></tr>
+                            <tr><td>Chelmsford</td><td>Rte 3A Railroad Bridge</td></tr>
+                            <tr><td>Revere</td><td>Revere St. Railroad Bridge</td></tr>
+                            <tr><td>Revere/Saugus</td><td>Rte 107 Highway Bridges  (3)</td></tr>
+                            <tr><td>Waltham/Weston</td><td>South St./River Rd. Bridge</td></tr>
+                            <tr><td>Everett</td><td>Tileston St. Railroad Bridge</td></tr>
+                            <tr><td>Saugus</td><td>Hamilton St. Bridge</td></tr>
+                            <tr><td>Saugus</td><td>Walnut St.  Roadway</td></tr>
+                            <tr><td>Waltham</td><td>Rte 20 / Rte 95 Bridge</td></tr>
+                            <tr><td>Wakefield</td><td>Meriam St. Railroad Bridge</td></tr>
+                            <tr><td>Hamilton</td><td>Rte 1A, Asbury and Walnuts Sts.     Roadway</td></tr>
+                            <tr><td>Wakefield</td><td>North Avenue    Roadway</td></tr>
+                            <tr><td>Waltham</td><td>Winter St./ Rte 95 Bridge</td></tr>
+                            <tr><td>Middleton</td><td>Boston St. Bridge</td></tr>
+                            <tr><td>Marblehead</td><td>Vinnin St.     Roadway</td></tr>
+                            <tr><td>Belmont</td><td>Rte 60   Roadway</td></tr>
+                            <tr><td>Revere</td><td>Park Avenue/Central Avenue   Roadway</td></tr>
+                            <tr><td>Lynn/Saugus</td><td>Boston St. Bridge  over Saugus River</td></tr>
+                            <tr><td>Revere</td><td>Tide gates/ Town Line Brook/ Culvert</td></tr>
+                            <tr><td>Revere</td><td>Prospect, Spring, Fenno Sts.     Roadway</td></tr>
+                            <tr><td>Somerville</td><td>Somerville Avenue	Roadway</td></tr>
+                            <tr><td>Ipswich</td><td>Rte 1A/ High Street Bridge</td></tr>
+                            <tr><td>Lynnfield/Wakefield</td><td>Rte 95   Noise Barrier</td></tr>
+                            <tr><td>Malden/Medford</td><td>Commercial St./Corporate Way     Roadway/Culvert</td></tr>
+                            <tr><td>Braintree</td><td>Wood Rd.    Salt Storage Facility</td></tr>
+                            <tr><td>Revere</td><td>North Shore Road      Tide gates</td></tr>
+                            <tr><td>Burlington</td><td>Middlesex Turnpike     Roadway</td></tr>
+                            <tr><td>Concord/Lincoln</td><td>Rte 117/Sudbury River Bridge</td></tr>
+                            <tr><td>Wellesley</td><td>Woodlawn St. Bridge</td></tr>
+                            <tr><td>Newburyport</td><td>Bike Path</td></tr>
                         </table>
                     </div>
                     <div class="tab-pane"  id='careers'>
@@ -234,14 +362,14 @@
                         </p>
                         <p>
                             Resumes can bea sent to
-                            julia@atlantic-ma.com
+                            <a href="mailto:julia@atlantic-ma.com"/>julia@atlantic-ma.com</a>
                         </p>
                     </div>
                 </div>
             </div>
             <div id='footer'>
                 153 Crest Avenue Revere, MA 02151 978-979-7544 fax 978-664-1855
-                julia@atlantic-ma.com
+                <a href="mailto:julia@atlantic-ma.com"/>julia@atlantic-ma.com</a>
             </div>
         </div>
     </body>
