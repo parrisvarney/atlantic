@@ -1,0 +1,129 @@
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#logo img {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+h1 {
+    font-size: 18pt;
+    font-weight: bolder;
+}
+
+#title h3 {
+    font-size: 14pt;
+    margin-top: -2px;
+}
+
+#title table td {
+    padding-top: 10px;
+    width: 50%;
+    text-align: center;
+}
+
+#title table tfoot td {
+    font-style: italic;
+    font-size: 10pt;
+}
+
+#text-body {
+    clear: both;
+    padding: 10px 0px 0px 0px
+}
+
+.tabs-border {
+    height: 10px;
+    width: 100%;
+    background-color: black;
+}
+
+.tab-content {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.navbar-nav {
+    background-color: #0099FF;
+    height: 50px !important;
+    width: 100%;
+    border-width: 10px 0px 10px 0px;
+    border-color: black;
+    border-style: solid;
+}
+
+#text-body h4 {
+    color: #0099FF;
+    text-decoration: underline;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+#text-body #services ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 12pt
+}
+
+#text-body #contact-us * {
+    text-align: center;
+}
+
+.blue-text {
+    color: #0099FF;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 16pt;
+}
+
+.blue-highlight {
+    background-color: #0099FF;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+a {
+    color: black;
+    clear: both;
+}
+
+.navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
+.navbar {min-height:32px !important}
+
+.tab-content img {
+    float: right;
+    display: inline;
+    margin: 20px;
+}
+
+.picture-table {
+    float: right;
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+.picture-table td, .picture-table td img {
+    padding: 2px;
+    margin: 0px;
+}
+
+#projects {
+    height: 50%;
+    overflow-y: scroll;
+}
+#projects td {
+    padding-left: 25px;
+}
+
+#footer {
+    background-color: #0099FF;
+    clear: both;
+}

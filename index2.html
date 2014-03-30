@@ -2,136 +2,12 @@
     <head>
         <script type='text/javascript' src='https://code.jquery.com/jquery-1.10.2.js'></script>
 
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <script src="js/bootstrap.min.js"></script>
 
         <style type='text/css'>
-            body {
-                font-family: "Trebuchet MS", Helvetica, sans-serif;
-                width: 800px;
-                margin: 0 auto;
-            }
-
-            #logo img {
-                height: 200px;
-                width: 200px;
-                float: left;
-            }
-
-            h1 {
-                font-size: 18pt;
-                font-weight: bolder;
-            }
-
-            #title h3 {
-                font-size: 14pt;
-                margin-top: -2px;
-            }
-
-            #title table td {
-                padding-top: 10px;
-                width: 50%;
-                text-align: center;
-            }
-
-            #title table tfoot td {
-                font-style: italic;
-                font-size: 10pt;
-            }
-
-            #text-body {
-                clear: both;
-                padding: 10px 0px 0px 0px
-            }
-
-            .tabs-border {
-                height: 10px;
-                width: 100%;
-                background-color: black;
-            }
-
-            .tab-content {
-                padding: 10px;
-                margin-top: 50px;
-            }
-
-            .navbar-nav {
-                background-color: #0099FF;
-                height: 50px !important;
-                width: 100%;
-                border-width: 10px 0px 10px 0px;
-                border-color: black;
-                border-style: solid;
-            }
-
-            #text-body h4 {
-                color: #0099FF;
-                text-decoration: underline;
-                font-size: 11pt;
-                font-weight: bold;
-            }
-
-            #text-body #services ul {
-                padding: 0;
-                list-style-type: none;
-            }
-
-            #text-body #contact-us * {
-                text-align: center;
-            }
-
-            .blue-text {
-                color: #0099FF;
-                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-                font-size: 16pt;
-            }
-
-            .blue-highlight {
-                background-color: #0099FF;
-                border-radius: 25px;
-                margin-left: auto;
-                margin-right: auto;
-                width: 50%;
-            }
-
-            a {
-                color: black;
-                clear: both;
-            }
-
-            .navbar-nav > li > a {padding-top:5px !important; padding-bottom:5px !important;}
-            .navbar {min-height:32px !important}
-
-            .tab-content img {
-                float: right;
-                display: inline;
-                margin: 20px;
-            }
-
-            .picture-table {
-                float: right;
-                padding: 0px;
-                border-collapse: collapse;
-            }
-
-            .picture-table td, .picture-table td img {
-                padding: 2px;
-                margin: 0px;
-            }
-
-            #projects {
-                height: 50%;
-                overflow-y: scroll;
-            }
-            #projects td {
-                padding-left: 25px;
-            }
-
-            #footer {
-                background-color: #0099FF;
-                clear: both;
-            }
 
         </style>
         <title>Atlantic Engineering</title>
@@ -162,8 +38,8 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href='#about-us' data-toggle="tab">ABOUT US</a></li>
                     <li><a href='#services' data-toggle="tab">SERVICES</a></li>
-                    <li><a href='#contact-us' data-toggle="tab">CONTACT US</a></li>
                     <li><a href='#projects' data-toggle="tab">PROJECTS</a></li>
+                    <li><a href='#contact-us' data-toggle="tab">CONTACT US</a></li>
                     <li><a href='#careers' data-toggle="tab">CAREERS</a></li>
                 </ul>
                 <div class="tab-content">
@@ -248,21 +124,6 @@
                             <li>Hydrographic - Surveys</li>
                         </ul>
                     </div>
-                    <div class="tab-pane" id='contact-us'>
-                        <h1>CONTACT US TODAY FOR A FREE ESTIMATE ...</h1>
-                        <p class="blue-text">
-                            YOU CAN RELY ON US TO RESPOND WITHIN 1 BUSINESS DAY!!!
-                        </p>
-                        <p class="blue-highlight">
-                            PHONE:  978-979-7544<br/>
-                            FAX:  978-664-1855<br/>
-                            OR<br/>
-                            EMAIL: <a href="mailto:julia@atlantic-ma.com">julia@atlantic-ma.com</a>
-                        </p>
-                        <p>
-                            Fully insured to $1,000,000 / Fully Licensed
-                        </p>
-                    </div>
                     <div class="tab-pane"  id='projects'>
                         <p class="blue-text">
                             Highway and Bridge Layout Projects
@@ -332,6 +193,19 @@
                             <tr><td>Newburyport</td><td>Bike Path</td></tr>
                         </table>
                     </div>
+                    <div class="tab-pane" id='contact-us'>
+                        <h1>CONTACT US TODAY FOR A FREE ESTIMATE ...</h1>
+                        <p class="blue-text">
+                            YOU CAN RELY ON US TO RESPOND WITHIN 1 BUSINESS DAY!!!
+                        </p>
+                        <p class="blue-highlight">
+                            PHONE:  978-979-7544<br/>
+                            FAX:  978-664-1855<br/>
+                            OR<br/>
+                            EMAIL: <a href="mailto:julia@atlantic-ma.com">julia@atlantic-ma.com</a>
+                        </p>
+                        <h1>Fully insured to $1,000,000 / Fully Licensed</h1>
+                    </div>
                     <div class="tab-pane"  id='careers'>
                         <p>
                             Atlantic Engineering is a family based business that
@@ -357,11 +231,12 @@
                             <ul>
                                 <li>Valid Drivers License</li>
                                 <li>Experience operating a total station and data collector</li>
+                                <li>Experience working with G.P.S. receivers, AutoCAD and Carlson are a plus.
                                 <li>Commitment to following safe procedures</li>
                             </ul>
                         </p>
                         <p>
-                            Resumes can bea sent to
+                            Resumes can be sent to
                             <a href="mailto:julia@atlantic-ma.com"/>julia@atlantic-ma.com</a>
                         </p>
                     </div>
