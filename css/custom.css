@@ -1,6 +1,7 @@
 
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: medium;
     width: 800px;
     margin: 0 auto;
 }
@@ -115,10 +116,6 @@ a {
     margin: 0px;
 }
 
-#projects {
-    height: 50%;
-    overflow-y: scroll;
-}
 #projects td {
     padding-left: 25px;
 }
