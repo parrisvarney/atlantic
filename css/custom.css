@@ -58,6 +58,15 @@ h1 {
     border-style: solid;
 }
 
+.navbar-nav li {
+    border-left: 1px solid #0065A6;
+    padding: 0 15px 0 15px;
+}
+
+.navbar-nav li:last-child {
+    border-right: 1px solid #0065A6;
+}
+
 #text-body h4 {
     color: #0099FF;
     text-decoration: underline;
@@ -123,4 +132,5 @@ a {
 #footer {
     background-color: #0099FF;
     clear: both;
+    text-align: center;
 }
