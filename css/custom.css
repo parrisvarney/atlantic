@@ -7,14 +7,18 @@ body {
 }
 
 #logo img {
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     float: left;
 }
 
 h1 {
     font-size: 18pt;
     font-weight: bolder;
+}
+
+#title caption {
+    padding-left: 50px;
 }
 
 #title h3 {
@@ -84,6 +88,10 @@ h1 {
     text-align: center;
 }
 
+#services h4 {
+    padding-top: 8px;
+}
+
 .blue-text {
     color: #0099FF;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -133,4 +141,8 @@ a {
     background-color: #0099FF;
     clear: both;
     text-align: center;
+
+    border-style: solid;
+    border-color: black;
+    border-width: 8px 0px 8px 0px;
 }
