@@ -15,6 +15,7 @@ body {
 h1 {
     font-size: 18pt;
     font-weight: bolder;
+    font-style: italic;
 }
 
 #title caption {
@@ -133,6 +134,30 @@ a {
     margin: 0px;
 }
 
+#about-us ul {
+    list-style: none;
+    text-align: center;
+    float: right;
+    font-style: italic;
+    padding: 10px;
+}
+
+#about-us ul lh {
+    color: red;
+}
+
+#about-us ul li {
+    margin-top: 10px;
+}
+
+#about-us ul li:before {
+  content:'\25e6';
+  margin-right:5px;
+  vertical-align:middle;
+  font-size:1.5em;
+  line-height:0;
+}
+
 #projects td {
     padding-left: 25px;
 }
@@ -145,4 +170,8 @@ a {
     border-style: solid;
     border-color: black;
     border-width: 8px 0px 8px 0px;
+}
+
+#careers ul:first-of-type {
+    font-weight: bold;
 }
