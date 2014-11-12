@@ -102,7 +102,6 @@ h1 {
 }
 
 .blue-highlight {
-    background-color: #0099FF;
     border-radius: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -138,7 +137,6 @@ a {
 
 #about-us ul {
     list-style: none;
-    text-align: center;
     float: right;
     font-style: italic;
     padding: 10px;
@@ -146,18 +144,25 @@ a {
 
 #about-us ul lh {
     color: red;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 #about-us ul li {
+    padding-left: 10px;
     margin-top: 10px;
 }
 
 #about-us ul li:before {
-  content:'\25e6';
+  content:"\002022";
+  color: red;
   margin-right:5px;
-  vertical-align:middle;
   font-size:1.5em;
   line-height:0;
+}
+
+#about-us p {
+    width: 45%;
 }
 
 #projects td {
@@ -168,7 +173,6 @@ a {
     background-color: #0099FF;
     clear: both;
     text-align: center;
-
     border-style: solid;
     border-color: black;
     border-width: 8px 0px 8px 0px;
