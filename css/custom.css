@@ -80,7 +80,7 @@ h1 {
 }
 
 .tab-content {
-    padding: 10px;
+    padding: 10px 10px 50px 10px;
     margin-top: 50px;
 }
 
@@ -171,9 +171,10 @@ a {
 }
 
 #about-us ul lh {
-    color: red;
-    font-size: 25px;
+    color: black;
+    font-size: 28px;
     font-weight: bolder;
+    padding-left: 5px;
 }
 
 #about-us ul li {
@@ -183,7 +184,7 @@ a {
 
 #about-us ul li:before {
   content:"\002022";
-  color: red;
+  color: black;
   margin-right:5px;
   font-size:1.5em;
   line-height:0;
@@ -204,6 +205,10 @@ a {
     border-style: solid;
     border-color: black;
     border-width: 8px 0px 8px 0px;
+
+    position: fixed;
+    width: 800px;
+    bottom: 0;
 }
 
 #careers ul:first-of-type {
