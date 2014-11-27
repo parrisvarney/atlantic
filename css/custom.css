@@ -1,18 +1,18 @@
 @font-face {
     font-family: "TimesRoman";
-    src: url('../fonts/newtimesroman.tff');
+    src: url('../fonts/newtimesroman.ttf');
 }
 @font-face {
     font-family: "Calibri";
-    src: url('../fonts/calibri.tff');
+    src: url('../fonts/calibri.ttf');
 }
 @font-face {
     font-family: "Constantia";
-    src: url('../fonts/constantia.tff');
+    src: url('../fonts/constantia.ttf');
 }
 @font-face {
     font-family: "Corsivi";
-    src: url('../fonts/corsivi.tff');
+    src: url('../fonts/corsivi.ttf');
 }
 
 body {
