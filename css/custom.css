@@ -1,6 +1,22 @@
+@font-face {
+    font-family: "TimesRoman";
+    src: url('../fonts/newtimesroman.tff');
+}
+@font-face {
+    font-family: "Calibri";
+    src: url('../fonts/calibri.tff');
+}
+@font-face {
+    font-family: "Constantia";
+    src: url('../fonts/constantia.tff');
+}
+@font-face {
+    font-family: "Corsivi";
+    src: url('../fonts/corsivi.tff');
+}
 
 body {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-family: "Constantia", Helvetica, sans-serif;
     font-size: medium;
     width: 800px;
     margin: 0 auto;
@@ -18,11 +34,23 @@ h1 {
     font-style: italic;
 }
 
+.constantia {
+    font-family: 'Constantia';
+}
+
+.new-times {
+    font-family: 'TimesRoman';
+}
+
 #title table {
     width:620px
 }
 
+#title h1 {
+    font-family: 'Corsivi';
+}
 #title h3 {
+    font-family: 'Calibri';
     font-size: 14pt;
     margin-top: -2px;
 }
