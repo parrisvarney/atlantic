@@ -123,6 +123,10 @@ h1 {
     padding-top: 8px;
 }
 
+.blue {
+    color: #0065A6;
+}
+
 .blue-text {
     color: #0099FF;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
